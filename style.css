@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  /* Primary */
+  --purple-600: hsl(246, 80%, 60%);
+
+  --orange-300-work: hsl(15, 100%, 70%);
+  --blue-300-play: hsl(195, 74%, 62%);
+  --pink-400-study: hsl(348, 100%, 68%);
+  --green-400-exercise: hsl(145, 58%, 55%);
+  --purple-700-social: hsl(264, 64%, 52%);
+  --yellow-300-selfcare: hsl(43, 84%, 65%);
+
+  /* Neutral */
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --purple-500: hsl(235, 45%, 61%);
+  --navy-200: hsl(236, 100%, 87%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px dotted white;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navy-950);
+    font-family: 'Rubik';
+    color: aliceblue;
+}
+
+main{
+    width: clamp(20rem, 90vw, 50rem);
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 1rem;
+
+}
+
+/* general styling */
+h4{
+    font-weight: 400;
+    
+    font-size: 18px;
+}
+h1{
+    font-weight: 300;
+}
+
+
+.pfp-section{
+    display: grid;
+    position: relative;
+}
+
+.pfp-section header{
+    padding: 1rem;
+    background-color: var(--purple-600);
+    border-radius: 1rem;
+    position: relative;
+    display: grid;
+    gap: 1rem;
+    
+}
+
+.pfp-section header img{
+    width: 3rem;
+}
+
+
+
+.pfp-section nav{
+    display: grid;
+    justify-content: start;
+    padding: 1rem;
+    background-color: var(--navy-900);
+    margin-top: -1rem;
+}
+.pfp-section nav button{
+    background: none;
+    outline: none;
+    border: 1px;
+    text-align: left;
+    color: aliceblue;
+
+}
+
+
+
+
+
+
+.time-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat((2, 1fr));
+    gap: 1rem;
+}
+
+
+

@@ -7,70 +7,114 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
 
-  Daily
-  Weekly
-  Monthly
+  <main>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+    <!-- profile section  -->
+    <section class="pfp-section">
+    <header>
+      <img src="images/image-jeremy.png" alt="image-jeremy">
+      <p>Report for</p>
+      <h1>Jeremy Robson</h1>
+    </header>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <nav>
+      <button>Daily</button>
+      <button>Weekly</button>
+      <button>Monthly</button>
+    </nav>
+    </section>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+    <section class="time-section">
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+      <!-- Work -->
+      <article class="card work">
+        <img src="images/icon-work.svg" alt="Work icon">
 
+        <header>
+          <h4>Work</h4>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </header>
+
+        <h1>5hrs</h1>
+        <p>Previous - 7hrs</p>
+      </article>
+
+      <!-- Play -->
+      <article class="card play">
+        <img src="images/icon-play.svg" alt="Play icon">
+
+        <header>
+          <h4>Play</h4>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </header>
+
+        <h1>1hr</h1>
+        <p>Previous - 2hrs</p>
+      </article>
+
+      <!-- Study -->
+      <article class="card study">
+        <img src="images/icon-study.svg" alt="Study icon">
+
+        <header>
+          <h4>Study</h4>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </header>
+
+        <h1>0hrs</h1>
+        <p>Previous - 1hr</p>
+      </article>
+
+      <!-- Exercise -->
+      <article class="card exercise">
+        <img src="images/icon-exercise.svg" alt="Exercise icon">
+
+        <header>
+          <h4>Exercise</h4>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </header>
+
+        <h1>1hr</h1>
+        <p>Previous - 1hr</p>
+      </article>
+
+      <!-- Social -->
+      <article class="card social">
+        <img src="images/icon-social.svg" alt="Social icon">
+
+        <header>
+          <h4>Social</h4>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </header>
+
+        <h1>1hr</h1>
+        <p>Previous - 3hrs</p>
+      </article>
+
+      <!-- Self Care -->
+      <article class="card self-care">
+        <img src="images/icon-self-care.svg" alt="Self care icon">
+
+        <header>
+          <h4>Self Care</h4>
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </header>
+
+        <h1>0hrs</h1>
+        <p>Previous - 1hr</p>
+      </article>
+
+    </section>
+
+  </main>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
