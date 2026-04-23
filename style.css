@@ -22,7 +22,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px dotted white;
 }
 body{
     min-height: 100vh;
@@ -74,7 +73,6 @@ h1{
 }
 
 
-
 .pfp-section nav{
     display: grid;
     justify-content: start;
@@ -101,6 +99,42 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat((2, 1fr));
     gap: 1rem;
+}
+
+.time-section article{
+    display: flex;
+    grid-template-rows: 100px 1fr;
+    flex-direction: column;
+    background-color: var(--orange-300-work);
+
+}
+
+.time-section article img{
+    width: 3rem;
+    align-self: self-end;
+    margin-bottom: -1rem;
+
+}
+
+
+.time-section article header{
+    display: flex;
+    align-items: center;
+}
+
+.time-section article header img{
+    width: 20px;
+    margin-left: auto;
+}
+
+
+
+.time-section section{
+    flex: 1;
+    position: relative;
+    background-color: var(--navy-900);
+    border-radius: 1rem ;
+    padding: 1rem;;
 }
 
 
